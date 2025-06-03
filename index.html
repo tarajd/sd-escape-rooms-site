@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Escape Rooms in San Diego</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+
+<!--Mapbox GL JS link-->
+<link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet" />
+
+<!--FontAwesome link (for carets)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!--Google Fonts link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!--Title panel font-->
+<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+<!--Subtitle Font-->
+<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+<!--popup label font-->
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+<!--Star icon link-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+
+</head>
+    <body>
+
+        <div id="map">
+            <!--Sidebars-->
+            <div id="left-sidebar" class="sidebar flex-center left collapsed">
+                <div class="sidebar-content rounded-rect flex-center">
+                    Left Sidebar
+                    <div class="sidebar-toggle rounded-rect left">
+                        <i id="leftbar-caret" style="font-size:36px" class="fa">&#xf0da;</i>
+                    </div>
+                </div>
+            </div>
+            <div id="right-sidebar" class="sidebar flex-center right collapsed">
+                <div class="sidebar-content rounded-rect flex-center">
+                    Right Sidebar
+                    <div class="sidebar-toggle rounded-rect right">
+                        <i id="rightbar-caret" style="font-size:36px" class="fa">&#xf0d9;</i>
+                    </div>
+                </div>
+            </div>
+            <!--Title Panel-->
+            <div id="top-title" class="sidebar rounded-rect flex-center top collapsed">
+                <div class="title-content flex-center">
+                    Escape Rooms in San Diego
+                    <div class="subtitle">tool made by Tara Disser</div>
+                <div class="sidebar-toggle rounded-rect top">
+                    <i id="top-caret" style="font-size:36px" class="fa">&#xf0d7;</i><!-- Down arrow -->
+                </div>
+                </div>
+            </div>
+        </div>  
+
+        <script type="module" src="js/map.js"></script>
+        <script type="module" src="js/dataFetch.js"></script>
+    </body>
+</html>
