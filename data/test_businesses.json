@@ -1,0 +1,233 @@
+[
+  {
+    "id": 1,
+    "label": "Brainy Actz",
+    "long": -117.1902882,
+    "lat": 32.90356906,
+    "URL": "https://brainyactzescaperooms.com/locations/san-diego-california/",
+    "address": "1340 Reynolds Ave\nIrvine, California 92614",
+    "phone": "(949) 647-0184",
+    "email": "sales@brainyactzsocal.com",
+    "logo": "https://brainyactzescaperooms.com/wp-content/uploads/2024/07/Brainy-Actz-Transparent.png",
+    "whitelogo": "y"
+  },
+  {
+    "id": 2,
+    "label": "Escape Era",
+    "long": -117.1932485,
+    "lat": 32.89454958,
+    "URL": "https://www.escapeera.com/",
+    "address": "5830 Oberlin Drive Suite 303\nSan Diego, CA 92121",
+    "phone": "(858) 707-5830",
+    "email": "EscapeEraHelp@gmail.com",
+    "logo": "https://www.escapeera.com/img/logo/logo.png",
+    "notes": "phone text only"
+  },
+  {
+    "id": 3,
+    "label": "MindFox Escape",
+    "long": -117.1628851,
+    "lat": 32.89070081,
+    "URL": "http://www.mindfoxescape.com/",
+    "address": "7404 Trade Street\nSan Diego, CA 92121",
+    "phone": "(858) 800-1234",
+    "email": "info@mindfoxescape.com",
+    "logo": "https://mindfoxescape.com/wp-content/uploads/2020/05/MindFox-Escape-logo-e1588725861335.png"
+  },
+  {
+    "id": 4,
+    "label": "Great Room Escape",
+    "long": -117.1472117,
+    "lat": 32.89152576,
+    "URL": "https://greatroomescapesandiego.com/",
+    "address": "9340 Dowdy Dr, Ste 105\nSan Diego, CA 92126",
+    "phone": "(619) 988-3733",
+    "email": "gresandiego@yahoo.com",
+    "logo": "https://greatroomescapesandiego.com/wp-content/uploads/2025/04/GRE-Logo-White.png"
+  },
+  {
+    "id": 5,
+    "label": "The Entrapment",
+    "long": -117.1507015,
+    "lat": 32.82412813,
+    "URL": "http://www.theentrapment.com/",
+    "address": "7990 Dagget St. Suite A-10\nSan Diego, CA 92111",
+    "phone": "(858) 848-6539",
+    "email": "info@theentrapment.com",
+    "logo": "https://www.theentrapment.com/newsite/wp-content/uploads/2019/06/logo_small_red_tag_horiz.png"
+  },
+  {
+    "id": 6,
+    "label": "Lock It Escape",
+    "long": -117.1523531,
+    "lat": 32.82573375,
+    "URL": "http://lockitescape.com/",
+    "address": "7969 Engineer Rd. Unit 215\nSan Diego, CA 92111",
+    "phone": "(619) 807-8545",
+    "email": "lockitescape@gmail.com",
+    "logo": "https://lockitescape.com/wp-content/uploads/2020/12/favicon.png"
+  },
+  {
+    "id": 7,
+    "label": "Red Door Escape Room (San Diego)",
+    "long": -117.1683373,
+    "lat": 32.77965074,
+    "URL": "https://reddoorescape.com/escape-rooms/san-diego/",
+    "address": "7007 Friars Rd, Suite 212\nSan Diego, CA 92108",
+    "phone": "(619) 679-1690",
+    "email": "sandiego@reddoorescape.com",
+    "logo": "https://reddoorescape.com/wp-content/uploads/SAN-DIEGO.png"
+  },
+  {
+    "id": 8,
+    "label": "Escape Games SD",
+    "long": -117.1617677,
+    "lat": 32.7494333,
+    "URL": "http://www.escapegamesd.com/",
+    "address": "3956 4th Avenue\nSan Diego, CA 92103",
+    "phone": "(619) 642-0095",
+    "email": "escapegamesd@gmail.com",
+    "logo": "https://www.escapegamesd.com/assets/logo.png",
+    "whitelogo": "y"
+  },
+  {
+    "id": 9,
+    "label": "Lara's Labyrinth",
+    "long": -117.1901362,
+    "lat": 32.74564724,
+    "URL": "http://ca.laraslabyrinth.com/",
+    "address": "2110 Hancock St\nSan Diego, CA 92110",
+    "phone": "(858) 348-0420",
+    "logo": "https://nutmegr.com/uploads/block_images/a59702ca7daaea25386a70636f256570.png"
+  },
+  {
+    "id": 10,
+    "label": "Global Escape SD",
+    "long": -117.1944702,
+    "lat": 32.76777847,
+    "URL": "http://globalescapesd.com/",
+    "address": "5433 Linda Vista Rd\nSan Diego, CA 92110",
+    "phone": "(619) 786-6212",
+    "logo": "https://globalescapesd.com/cdn/shop/files/logo.png?v=1709646143&width=420",
+    "whitelogo": "y"
+  },
+  {
+    "id": 11,
+    "label": "Quicksand Escape Games",
+    "long": -117.2513873,
+    "lat": 32.79740808,
+    "URL": "http://www.quicksandescape.com/",
+    "address": "1001 Garnet Ave \nSan Diego, CA 92109",
+    "phone": "(619) 929-0152",
+    "email": "info@quicksandescape.com",
+    "logo": "https://www.quicksandescape.com/uploads/7/3/5/9/73590545/1457738631.png"
+  },
+  {
+    "id": 12,
+    "label": "Escapology (San Diego)",
+    "long": -117.2073537,
+    "lat": 33.02893141,
+    "URL": "https://www.escapology.com/en/san-diego-ca",
+    "address": "3116 Mission Blvd\nSan Diego, CA 92109",
+    "phone": "(858) 412-5914",
+    "email": "sandiego@escapology.com",
+    "logo": "https://www.escapology.com/_next/image?url=https%3A%2F%2Fassets01.escapdev.com%2Fuploads%2Fescapology_logo_673a909155.png&w=1920&q=75"
+  },
+  {
+    "id": 13,
+    "label": "The Escape Game",
+    "long": -117.1601815,
+    "lat": 32.70811234,
+    "URL": "https://theescapegame.com/san-diego/?utm_source=google&utm_medium=organic&utm_campaign=gbp&utm_id=san-diego",
+    "address": "232 Fifth Avenue\nSan Diego, CA 92101",
+    "phone": "(619) 853-2834",
+    "email": "SanDiego@TheEscapeGame.com",
+    "logo": "https://theescapegame.com/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fkrd6avww%2Fproduction%2F7592b6197eda288a4a5926a37fab0a22a6826eba-2084x334.png&w=256&q=75"
+  },
+  {
+    "id": 14,
+    "label": "Steal and Escape",
+    "long": -117.1026246,
+    "lat": 32.65985665,
+    "URL": "http://www.stealandescape.com/",
+    "address": "2602 Transportation Avenue, Suite B\nSan Diego, CA 91950",
+    "phone": "(619) 259-4096",
+    "logo": "https://stealandescape.com/wp-content/uploads/2020/07/STEAL-AND-ESCAPE_Door-Only_HD.png"
+  },
+  {
+    "id": 15,
+    "label": "Night Walker Caverns Escape Room Adventures",
+    "long": -117.051376,
+    "lat": 32.75561988,
+    "URL": "http://www.nightwalkercaverns.com/",
+    "address": "6760 University Avenue #100-110\nSan Diego, CA 92115",
+    "phone": "(619) 280-7029",
+    "email": "info@nightwalkercaverns.com",
+    "logo": "https://nightwalkercaverns.com/wp-content/uploads/2020/01/Nightwalker-Caverns-Logo-FINAL-Color-reduced-1536x876.png"
+  },
+  {
+    "id": 16,
+    "label": "Red Door Escape Room (Encinitas)",
+    "long": -117.2905323,
+    "lat": 33.05724688,
+    "URL": "https://reddoorescape.com/escape-rooms/encinitas/",
+    "address": "687 S Coast Highway 101, STE 101\nEncinitas, CA 92024",
+    "phone": "(760) 704-8834",
+    "email": "encinitas@reddoorescape.com",
+    "logo": "https://reddoorescape.com/wp-content/uploads/ENCINITAS_red.png"
+  },
+  {
+    "id": 17,
+    "label": "Cinema Escape Rooms (ArtHatch)",
+    "long": -117.0783264,
+    "lat": 33.12345453,
+    "URL": "http://www.cinemaescaperooms.com/",
+    "address": "317 E Grand Ave #4\nEscondido, CA 92025",
+    "phone": "(714) 660-0811",
+    "email": "info@cinemaescaperooms.com",
+    "logo": "https://cinemaescaperooms.com/wp-content/themes/cinemaescaperoomsV2/img/2fe2f6_834d79daefb54a53a84278a163ab50f4_mv2.png"
+  },
+  {
+    "id": 18,
+    "label": "Cinema Escape Rooms (Main)",
+    "long": -117.0796708,
+    "lat": 33.12246624,
+    "URL": "http://www.cinemaescaperooms.com/",
+    "address": "201 E Grand Ave #2g (2nd Floor)\nEscondido, CA 92025",
+    "phone": "(714) 660-0811",
+    "email": "info@cinemaescaperooms.com",
+    "logo": "https://cinemaescaperooms.com/wp-content/themes/cinemaescaperoomsV2/img/2fe2f6_834d79daefb54a53a84278a163ab50f4_mv2.png"
+  },
+  {
+    "id": 19,
+    "label": "Locked Adventures",
+    "long": -117.1843078,
+    "lat": 33.13937964,
+    "URL": "http://www.lockedadventures.com/",
+    "address": "844 W. San Marcos Blvd, Suite 103\nSan Marcos, CA 92078",
+    "phone": "(760) 350-5632",
+    "email": "info@lockedadventures.com",
+    "logo": "https://static.wixstatic.com/media/6a2924_b36ecc375f5642f291881c0196315b5d~mv2_d_4134_4134_s_4_2.png/v1/fill/w_174,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a2924_b36ecc375f5642f291881c0196315b5d~mv2_d_4134_4134_s_4_2.png"
+  },
+  {
+    "id": 20,
+    "label": "Escapology (Carlsbad)",
+    "long": -117.3311181,
+    "lat": 33.18053205,
+    "URL": "https://escapology.com/en/carlsbad-ca/",
+    "address": "2525 El Camino Real, Unit 208\nCarlsbad, CA 92008",
+    "phone": "(760) 223-7936",
+    "email": "carlsbad@escapology.com",
+    "logo": "https://www.escapology.com/_next/image?url=https%3A%2F%2Fassets01.escapdev.com%2Fuploads%2FCARLSBAD_66ef1a1218.png&w=3840&q=75"
+  },
+  {
+    "id": 21,
+    "label": "Top Tier Escape Rooms",
+    "long": -117.2721987,
+    "lat": 33.22083669,
+    "URL": "https://www.toptierescaperooms.com/",
+    "address": "4750 Oceanside Blvd, Unit A13\nOceanside, CA 92056",
+    "email": "info@toptierescaperooms.com",
+    "logo": "https://toptierescaperooms.com/wp-content/uploads/2025/03/Top_Tier_Logo.png"
+  }
+]
