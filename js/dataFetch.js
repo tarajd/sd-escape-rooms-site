@@ -9,7 +9,7 @@
         if (cachedBizData) return cachedBizData; // keep from re-fetching data
 
         try{
-            const res = await fetch('/data/test_businesses.json');
+            const res = await fetch('data/test_businesses.json');
 
             if(!res.ok){ // error handling
                 throw new Error(`{res.status}`);
@@ -35,7 +35,7 @@
         if (cachedRoomData) return cachedRoomData; // keep from re-fetching data
 
         try{
-            const res = await fetch('/data/test_rooms.json');
+            const res = await fetch('data/test_rooms.json');
 
             if(!res.ok){ // error handling
                 throw new Error(`{res.status}`);
