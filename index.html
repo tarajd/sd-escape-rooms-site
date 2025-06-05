@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Escape Rooms in San Diego</title>
+<title>San Diego Escape Rooms</title>
 <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
 <!--Mapbox GL JS link-->
@@ -30,12 +30,13 @@
 
 </head>
     <body>
-
         <div id="map">
             <!--Sidebars-->
             <div id="left-sidebar" class="sidebar flex-center left collapsed">
-                <div class="sidebar-content rounded-rect flex-center">
-                    Left Sidebar
+                <div class="sidebar-content rounded-rect flex-center"><!--might delete-->
+                    <div id="left-sidebar-content">
+                        Placeholder
+                    </div>
                     <div class="sidebar-toggle rounded-rect left">
                         <i id="leftbar-caret" style="font-size:36px" class="fa">&#xf0da;</i>
                     </div>
@@ -43,7 +44,13 @@
             </div>
             <div id="right-sidebar" class="sidebar flex-center right collapsed">
                 <div class="sidebar-content rounded-rect flex-center">
-                    Right Sidebar
+                    <div id="right-sidebar-content" class="business">
+                        <h2 id="businessName" href="url">Business Name</h2>
+                        <h4 id="address">Address</h4>
+                        <h4 id="phoneNumber">Phone Number</h4>
+                        <h5 id="email">Email</h5>
+                        <p id="notes">Notes</p>
+                    </div>
                     <div class="sidebar-toggle rounded-rect right">
                         <i id="rightbar-caret" style="font-size:36px" class="fa">&#xf0d9;</i>
                     </div>
@@ -52,11 +59,40 @@
             <!--Title Panel-->
             <div id="top-title" class="sidebar rounded-rect flex-center top collapsed">
                 <div class="title-content flex-center">
-                    Escape Rooms in San Diego
+                    San Diego Escape Rooms
                     <div class="subtitle">tool made by Tara Disser</div>
-                <div class="sidebar-toggle rounded-rect top">
-                    <i id="top-caret" style="font-size:36px" class="fa">&#xf0d7;</i><!-- Down arrow -->
+                    <div class="sidebar-toggle rounded-rect top">
+                        <i id="top-caret" style="font-size:36px" class="fa">&#xf0d7;</i><!-- Down arrow -->
+                    </div>
                 </div>
+            </div>
+            <!--Gray overlap for info panel-->
+            <div id="overlay"></div>
+            <!--Info Panel-->
+            <div id="info-panel" class="sidebar rounded-rect flex-center bottom collapsed">
+                <div id="info-panel-scroll">
+                    <div id="info-content">
+                        <h2>ABOUT THIS MAP</h2>
+                            <p>
+                                This map is intended to be used as a tool to make searching for escape rooms 
+                                in the San Diego Metropolitan Area easier. 
+                            </p>
+                            <br>
+                            <h2>INSTRUCTIONS:</h2>
+                            <ul>
+                                <li>Hover over a star to find businesses</li>
+                                <li>Click on a star to expand the right panel with more business information and rooms <b>OR</b> use the left panel to filter rooms by preference</li>
+                                <li>Look through each businesses' rooms and find one that fits your needs!</li>
+                            </ul>
+                            <br>
+                            <h4>AUTHOR'S NOTE</h4>
+                            <p>
+                                bla bla
+                            </p>
+                    </div>
+                </div>
+                <div class="sidebar-toggle rounded-rect bottom">
+                    <i id="info-button" style="font-size:36px" class="fa">&#xf05a;</i>
                 </div>
             </div>
         </div>  

@@ -1,4 +1,4 @@
-    body {
+body {
         margin: 0;
         padding: 0;
     }
@@ -17,6 +17,16 @@
         cursor: pointer
     }
 
+    /* star marker */
+    .material-icons {
+        color: #eb34cc;
+        font-size: 24px;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: #8f0377;
+    }
+
+    /* popup stuff */
+
     .mapboxgl-popup-content {
         text-align: center;
     }
@@ -25,8 +35,16 @@
         background-color: #403f3f;
     }
 
-    .white-logo .mapboxgl-popup-tip {
-        border-bottom-color: #403f3f !important;
+    .white-logo .mapboxgl-popup-content {
+        background-color: #403f3f;
+    }
+
+    .on-left.white-logo .mapboxgl-popup-tip {
+        border-left-color: #403f3f !important; /*anchor on right*/
+    }
+
+    .on-right.white-logo .mapboxgl-popup-tip {
+        border-right-color: #403f3f !important; /*anchor on left*/
     }
 
     .white-logo .mapboxgl-popup-close-button {
@@ -37,8 +55,12 @@
         background-color: white;
     }
 
-    .dark-logo .mapboxgl-popup-tip {
-        border-bottom-color: white !important;
+    .on-left.dark-logo .mapboxgl-popup-tip {
+        border-left-color: white !important; /*anchor on right*/
+    }
+
+    .on-right.dark-logo .mapboxgl-popup-tip {
+        border-right-color: white !important; /*anchor on left*/
     }
 
     .dark-logo .mapboxgl-popup-close-button {
@@ -54,17 +76,15 @@
     }
 
     .popupImage {
-        max-width: 100%;
-        max-height: 100%;
-        width: auto;
-        height: auto;
-        display: block;
+        width: 100%;
+        max-height: 100px;
+        object-fit: scale-down;
     }
 
     .popup-label-black {
         font-family: "Space Mono", monospace;
         font-weight: 700;
-        font-size: large;
+        font-size: 14px;
         position: relative;
         justify-content: center;
         margin-top: -5px;
@@ -74,7 +94,7 @@
     .popup-label-white {
         font-family: "Space Mono", monospace;
         font-weight: 700;
-        font-size: large;
+        font-size: 14px;
         position: relative;
         justify-content: center;
         margin-top: -5px;
@@ -112,6 +132,15 @@
         left: 25%
     }
 
+    .flex-center.bottom {
+        position: absolute;
+        margin-top: 10%;
+        width: 50%;
+        height: 50%;
+        left: 25%;
+        align-items: flex-start;
+    }
+
     .sidebar-content {
         position: absolute;
         width: 95%;
@@ -119,6 +148,8 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 32px;
         color: gray;
+        align-items: flex-start;
+        justify-content: flex-start;
     }
 
     .title-content {
@@ -128,7 +159,7 @@
         width: 95%;
         height: 100%;
         font-size: 30px;
-        color: black;
+        color: #8f0377;
         top: -10px;
     }
 
@@ -173,6 +204,13 @@
         color: black;
     }
 
+    .sidebar-toggle.bottom {
+        top: -70px;
+        width: 10%;
+        color: black;
+        height: 10%;
+    }
+
     .sidebar-toggle:hover {
         color: #0aa1cf;
         cursor: pointer;
@@ -187,6 +225,7 @@
     #left-sidebar,
     #right-sidebar {
         width: 300px;
+        max-width: 20%;
     }
 
     .sidebar.top {
@@ -207,6 +246,10 @@
         transform: translateY(-70px);
     }
 
+    .bottom.collapsed {
+        transform: translateY(calc(100vh - 195px));
+    }
+
     .rightbar-caret,
     .top-caret,
     .leftbar-caret {
@@ -214,3 +257,116 @@
         width: 0;
         height: 0;
     }
+
+    /* info panel and overlay */
+    #overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(64, 64, 64, 0.5);
+        z-index: 1000;
+        pointer-events: none;
+        display: none; /* Hide overlay by default */
+    }
+
+    /* block map functionality when overlay is active */
+    #overlay.active { 
+        display: block;
+        pointer-events: auto;
+    }
+
+    #info-panel {
+        z-index: 1100;
+        position: absolute;
+        left: 25%;
+        width: 50%;
+        pointer-events: auto;
+        margin-top: 15%;
+    }
+
+    #info-panel .sidebar-toggle.bottom {
+        pointer-events: auto;
+    }
+
+    #info-content {
+        max-width: 100%;
+        margin: 24px 16px 16px 16px;
+        font-size: 16px;
+        color: #222;
+        overflow-y: scroll;
+        max-height: 100%;
+        font-family: "Hepta Slab", sans-serif;
+    }
+
+    #info-content h2 {
+        margin-top: 0;
+        color: #8f0377;
+        font-size: 29px;
+        text-align: left;
+        font-family: "space Mono", monospace;
+    }
+
+    #info-content h4 {
+        margin-top: 0;
+        color: #8f0377;
+        font-size: 20px;
+        text-align: left;
+        font-family: "Space Mono", monospace;
+    }
+
+    #info-content ul {
+        padding-left: 20px;
+        margin: 10px 0;
+    }
+
+    #info-panel-scroll {
+        overflow-y: clip;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* right sidebar content for businesses */
+
+    #right-sidebar-content.business { /* need to add class toggle in js */
+        font-size: 16px;
+        color: #555;
+        overflow-y: scroll;
+        font-family: "Hepta Slab", sans-serif;
+        margin: 20px;
+        width: 90%;
+        height: 90%;
+    }
+
+    #right-sidebar-content.business h2 {
+        margin-top: 0;
+        color: #8f0377;
+        font-size: 2vw;
+        text-align: left;
+        font-family: "Space Mono", monospace;
+        line-height: 4vh;
+    }
+
+    #right-sidebar-content.business h5 {
+        font-size: 0.8vw;
+    }
+
+    #right-sidebar-content.business p {
+        font-size: 0.9vw;
+    }
+
+    /* links inherit color from parent class */
+    a, a:visited { 
+        color: inherit;
+        text-decoration: none;
+    }
+
+    /* hovered/active link has pink color */
+    a:hover, a:active{ 
+        color: #eb34cc;
+        text-decoration: none;
+    }
+
+
+
