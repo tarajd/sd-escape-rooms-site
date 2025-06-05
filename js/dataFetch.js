@@ -20,7 +20,7 @@
         for(let i = 0; i < cachedBizData.length; i++){
             cachedBizData[i].label = cachedBizData[i].label.toUpperCase();
         }
-	console.log("bizData pre return")
+
         return cachedBizData;
 
         } catch (error){ // error handling
@@ -42,7 +42,6 @@
             }
 
         cachedRoomData = await res.json();
-	console.log("roomData pre return")
         return cachedRoomData;
 
         } catch (error){ // error handling
