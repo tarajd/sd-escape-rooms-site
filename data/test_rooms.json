@@ -19,7 +19,7 @@
     "cost8": 32.95,
     "cost9": 32.95,
     "cost10": 32.95,
-    "mortystars": "ON",
+    "mortystars": "Overwhelmingly Negative",
     "taraplayed": "n"
   },
   {
@@ -42,7 +42,7 @@
     "cost8": 32.95,
     "cost9": 32.95,
     "cost10": 32.95,
-    "mortystars": "MN",
+    "mortystars": "Mostly Negative",
     "taraplayed": "n"
   },
   {
@@ -67,7 +67,7 @@
     "cost9": 35,
     "cost10": 35,
     "cost11": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "y",
     "tarareview": "One of my favorites puzzle-wise. I didn't really understand the storyline but the room itself was unique in a few ways.",
     "notes": "Cost for 2 players is +$5 each on the weekends"
@@ -94,7 +94,7 @@
     "cost9": 35,
     "cost10": 35,
     "cost11": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "y",
     "tarareview": "A cool room and gameplay in general but when played with 4 experienced players, some of us found ourselves with nothing to do ay times. Would still recommend."
   },
@@ -116,7 +116,7 @@
     "cost6": 32,
     "cost7": 32,
     "cost8": 32,
-    "mortystars": "OP",
+    "mortystars": "Overwhelmingly Positive",
     "taraplayed": "y",
     "tarareview": "A good classic room with a variety of puzzle types. Good for a small groud of experienced players."
   },
@@ -135,7 +135,7 @@
     "cost3": 37,
     "cost4": 37,
     "cost5": 37,
-    "mortystars": "OP",
+    "mortystars": "Overwhelmingly Positive",
     "taraplayed": "y",
     "tarareview": "Super unique style and lots of puzzles. Would absolutely recommend to frequent players."
   },
@@ -160,7 +160,7 @@
     "cost8": 34.95,
     "cost9": 34.95,
     "cost10": 34.95,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "n"
   },
   {
@@ -182,7 +182,7 @@
     "cost6": 34.95,
     "cost7": 34.95,
     "cost8": 34.95,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "n"
   },
   {
@@ -206,7 +206,7 @@
     "cost8": 34.95,
     "cost9": 34.95,
     "cost10": 34.95,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "taraplayed": "n"
   },
   {
@@ -230,7 +230,7 @@
     "cost8": 34.95,
     "cost9": 34.95,
     "cost10": 34.95,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "taraplayed": "n"
   },
   {
@@ -248,7 +248,7 @@
     "cost4": 32,
     "cost5": 32,
     "cost6": 32,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -266,7 +266,7 @@
     "cost4": 36,
     "cost5": 36,
     "cost6": 36,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -285,7 +285,7 @@
     "cost5": 33,
     "cost6": 33,
     "cost7": 33,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "y",
     "tarareview": "The room itself was AMAZING, some incredible mechanics and overall really well done in terms of props, decor, etc. Very challenging. One of my top 3 rooms."
   },
@@ -293,7 +293,7 @@
     "id": 6,
     "label": "Lock It Escape",
     "name": "High Noon Saloon",
-    "description": "Welcome  to the old west! Here at the High Noon Saloon the Outlaws run the town. In their latest heist they stole gold from a mine. One of the Outlaws took more then his share. Find the missing gold, break into the High Noon Saloon and find the gold before the Outlaws return at High Noon!",
+    "description": "Welcome to the old west! Here at the High Noon Saloon the Outlaws run the town. In their latest heist they stole gold from a mine. One of the Outlaws took more then his share. Find the missing gold, break into the High Noon Saloon and find the gold before the Outlaws return at High Noon!",
     "webpplfloorrec": 3,
     "webpplceilingrec": 8,
     "time": 60,
@@ -306,7 +306,7 @@
     "cost6": 40,
     "cost7": 40,
     "cost8": 40,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "n"
   },
   {
@@ -344,7 +344,7 @@
     "cost2": 24.95,
     "cost3": 24.95,
     "cost4": 24.95,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -365,7 +365,7 @@
     "cost5": 41.95,
     "cost6": 41.95,
     "cost7": 41.95,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -386,7 +386,7 @@
     "cost5": 41.95,
     "cost6": 41.95,
     "cost7": 41.95,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -407,7 +407,7 @@
     "cost5": 41.95,
     "cost6": 41.95,
     "cost7": 41.95,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -428,7 +428,7 @@
     "cost5": 41.95,
     "cost6": 41.95,
     "cost7": 41.95,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -448,7 +448,7 @@
     "cost5": 41.95,
     "cost6": 41.95,
     "cost7": 41.95,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -467,7 +467,7 @@
     "cost3": 37,
     "cost4": 37,
     "cost5": 37,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -490,7 +490,7 @@
     "cost7": 37,
     "cost8": 37,
     "cost9": 37,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -513,7 +513,7 @@
     "cost7": 37,
     "cost8": 37,
     "cost9": 37,
-    "mortystars": "MN",
+    "mortystars": "Mostly Negative",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -541,7 +541,7 @@
     "cost12": 31.58,
     "cost13": 30.69,
     "cost14": 28.5,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -566,7 +566,7 @@
     "cost8": 37.38,
     "cost9": 35.44,
     "cost10": 31.9,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -588,7 +588,7 @@
     "cost6": 39.83,
     "cost7": 38.43,
     "cost8": 37.38,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -614,7 +614,7 @@
     "cost10": 35.9,
     "cost11": 34.45,
     "cost12": 33.25,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "y",
     "tarareview": "Very cool room, very well put-together. Nothing super special in terms of puzzles or difficulty, but some good mechanical/technical puzzles."
@@ -641,7 +641,7 @@
     "cost10": 39.9,
     "cost11": 36.27,
     "cost12": 33.25,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -666,7 +666,7 @@
     "cost8": 35,
     "cost9": 35,
     "cost10": 35,
-    "mortystars": "MN",
+    "mortystars": "Mostly Negative",
     "bizdiff": "medium",
     "taraplayed": "n",
     "notes": "Rooms are wheelchair-accessible, building is not. Contact business in advance for accomodations."
@@ -689,7 +689,7 @@
     "cost5": 35,
     "cost6": 35,
     "cost7": 35,
-    "mortystars": "MN",
+    "mortystars": "Mostly Negative",
     "bizdiff": "hard",
     "taraplayed": "n",
     "notes": "Rooms are wheelchair-accessible, building is not. Contact business in advance for accomodations."
@@ -712,7 +712,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -733,7 +733,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "y",
     "tarareview": "Good for newer players; nice decor and a pretty classic rooms with traditional puzzles."
   },
@@ -755,7 +755,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -776,7 +776,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "y",
     "tarareview": "Decor was a bit cheap and cheesy, and the gameplay was pretty good. Would recommend for first-time players."
   },
@@ -799,7 +799,7 @@
     "cost6": 30,
     "cost7": 30,
     "cost8": 30,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -822,7 +822,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -845,7 +845,7 @@
     "cost6": 30,
     "cost7": 30,
     "cost8": 30,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -868,7 +868,7 @@
     "cost6": 30,
     "cost7": 30,
     "cost8": 30,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "hard",
     "taraplayed": "y",
     "tarareview": "Would not recommend; puzzles were very simple to the point where we were able to solve some without actually using the clues. Some puzzles didn't correlate well and the solutions didn't end up making much sense. Game was very linear, we were only solving one puzzle at a time."
@@ -892,7 +892,7 @@
     "cost6": 30,
     "cost7": 30,
     "cost8": 30,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -915,7 +915,7 @@
     "cost6": 44.99,
     "cost7": 44.99,
     "cost8": 44.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -938,7 +938,7 @@
     "cost6": 44.99,
     "cost7": 44.99,
     "cost8": 44.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -961,7 +961,7 @@
     "cost6": 44.99,
     "cost7": 44.99,
     "cost8": 44.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -974,7 +974,7 @@
     "webpplfloorrec": 1,
     "webpplceilingrec": 8,
     "time": 60,
-    "accessible": "y",
+    "accessible": "rw",
     "kid": "y",
     "bookURL": "https://theescapegame.com/san-diego/book-now/",
     "cost2": 44.99,
@@ -984,7 +984,7 @@
     "cost6": 44.99,
     "cost7": 44.99,
     "cost8": 44.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -997,7 +997,7 @@
     "webpplfloorrec": 1,
     "webpplceilingrec": 8,
     "time": 60,
-    "accessible": "y",
+    "accessible": "rw",
     "kid": "y",
     "bookURL": "https://theescapegame.com/san-diego/book-now/",
     "cost2": 44.99,
@@ -1007,7 +1007,7 @@
     "cost6": 44.99,
     "cost7": 44.99,
     "cost8": 44.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -1028,7 +1028,7 @@
     "cost6": 40,
     "cost7": 40,
     "cost8": 40,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "y",
     "tarareview": "Good for slightly larger groups (5 or 6). More technical/mechanical puzzles than average and the room was made very well."
@@ -1050,7 +1050,7 @@
     "cost4": 40,
     "cost5": 40,
     "cost6": 40,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "y",
     "tarareview": "Medium-tech. Good game - a couple cool things, but nothing mind-blowing for experienced players. Good storyline, props, and interactive puzzles. Best for 3 experienced players."
@@ -1071,7 +1071,7 @@
     "cost3": 40,
     "cost4": 40,
     "cost5": 40,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -1090,7 +1090,7 @@
     "cost2": 38,
     "cost3": 38,
     "cost4": 38,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -1111,8 +1111,8 @@
     "cost6": 40,
     "cost7": 40,
     "cost8": 40,
-    "mortystars": "VP",
-    "bizdiff": "medium-hard",
+    "mortystars": "Very Positive",
+    "bizdiff": "medium",
     "taraplayed": "n"
   },
   {
@@ -1134,7 +1134,7 @@
     "cost8": 38,
     "cost9": 38,
     "cost10": 38,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "variable",
     "taraplayed": "n"
   },
@@ -1153,7 +1153,7 @@
     "cost4": 42,
     "cost5": 42,
     "cost6": 42,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "expert",
     "taraplayed": "n"
   },
@@ -1173,7 +1173,7 @@
     "cost4": 40,
     "cost5": 40,
     "cost6": 40,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -1191,7 +1191,7 @@
     "cost4": 36.95,
     "cost5": 36.95,
     "cost6": 36.95,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -1211,7 +1211,7 @@
     "cost4": 36.95,
     "cost5": 36.95,
     "cost6": 36.95,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1230,7 +1230,7 @@
     "cost4": 36.95,
     "cost5": 36.95,
     "cost6": 36.95,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1248,7 +1248,7 @@
     "cost4": 36.95,
     "cost5": 36.95,
     "cost6": 36.95,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1270,7 +1270,7 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1290,7 +1290,7 @@
     "cost4": 40,
     "cost5": 35,
     "cost6": 35,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1312,88 +1312,8 @@
     "cost6": 35,
     "cost7": 35,
     "cost8": 35,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "easy",
-    "taraplayed": "n"
-  },
-  {
-    "id": 19,
-    "label": "Locked Adventures",
-    "name": "Quest for the Throne",
-    "description": "You were born into a Royal family and it is your birthright to assume the Throne upon the King's death, but your evil younger brother has exiled you from the Kingdom. You will have 60 minutes to find proof of your birthright, to capture the throne as yours and become ruler of the kingdom.",
-    "image": "https://static.wixstatic.com/media/6a2924_0702a87a516d4e01a49cf608fee0b937~mv2_d_2500_1668_s_2.jpg/v1/fill/w_162,h_108,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/6a2924_0702a87a516d4e01a49cf608fee0b937~mv2_d_2500_1668_s_2.jpg",
-    "webpplfloorrec": 3,
-    "webpplceilingrec": 8,
-    "time": 60,
-    "kid": "y",
-    "bookURL": "https://www-1564g.bookeo.com/bookeo/b_lockedadventures_start.html?ctlsrc2=mh2HqeAe3WiDnUUuO2xEn%2F%2BkpXckfDQLahehyuLZoNQ%3D&src=03a",
-    "cost3": 39,
-    "cost4": 39,
-    "cost5": 39,
-    "cost6": 39,
-    "cost7": 39,
-    "cost8": 39,
-    "mortystars": "MP",
-    "taraplayed": "n"
-  },
-  {
-    "id": 19,
-    "label": "Locked Adventures",
-    "name": "The Curse of KV62",
-    "description": "You are in the Valley of Kings and are exploring tomb KV62 when the curse of the Pharaoh's has invoked and sealed off the entrance. You will have to navigate through the tomb and find another way out.",
-    "image": "https://static.wixstatic.com/media/6a2924_a199c4b81e79455fa3d0ac052dfb1398~mv2.jpg/v1/fill/w_120,h_187,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/NEW%20CURSE%20OF%20no%20logo%20(1).jpg",
-    "webpplfloorrec": 2,
-    "webpplceilingrec": 8,
-    "time": 60,
-    "bookURL": "https://www-1564g.bookeo.com/bookeo/b_lockedadventures_start.html?ctlsrc2=mh2HqeAe3WiDnUUuO2xEn%2F%2BkpXckfDQLahehyuLZoNQ%3D&src=03a",
-    "cost2": 39,
-    "cost3": 39,
-    "cost4": 39,
-    "cost5": 39,
-    "cost6": 39,
-    "cost7": 39,
-    "cost8": 39,
-    "mortystars": "VP",
-    "taraplayed": "n"
-  },
-  {
-    "id": 19,
-    "label": "Locked Adventures",
-    "name": "Hunting Dracula",
-    "description": "Vampires were once eradicated years ago by a famous vampire hunter.  However as the moon rises red, the most evil vampire has returned - Dracula!  Are you brave enough to come face to face with Dracula and destroy him once and for all?",
-    "image": "https://static.wixstatic.com/media/6a2924_85fa20e1225a4e8c955569e084fa1e22~mv2.jpg/v1/fill/w_135,h_135,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1579667181358_count001.jpg",
-    "webpplfloorrec": 3,
-    "webpplceilingrec": 8,
-    "time": 75,
-    "bookURL": "https://www-1564g.bookeo.com/bookeo/b_lockedadventures_start.html?ctlsrc2=mh2HqeAe3WiDnUUuO2xEn%2F%2BkpXckfDQLahehyuLZoNQ%3D&src=03a",
-    "cost3": 43,
-    "cost4": 43,
-    "cost5": 43,
-    "cost6": 43,
-    "cost7": 43,
-    "cost8": 43,
-    "mortystars": "VP",
-    "taraplayed": "n"
-  },
-  {
-    "id": 19,
-    "label": "Locked Adventures",
-    "name": "Christmas: Help Wanted",
-    "description": "Oh No!  The Elves have gone on strike!  Help save Christmas, by finding the missing presents, load up the train on time to get delivered!",
-    "image": "https://static.wixstatic.com/media/6a2924_bbacde2ab11840678a74c4fce97ee3fa~mv2.jpg/v1/fill/w_204,h_310,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Merry%20Chr.jpg",
-    "webpplfloorrec": 2,
-    "webpplceilingrec": 8,
-    "time": 60,
-    "kid": "y",
-    "bookURL": "https://www-1564g.bookeo.com/bookeo/b_lockedadventures_start.html?ctlsrc2=mh2HqeAe3WiDnUUuO2xEn%2F%2BkpXckfDQLahehyuLZoNQ%3D&src=03a",
-    "cost2": 39,
-    "cost3": 39,
-    "cost4": 39,
-    "cost5": 39,
-    "cost6": 39,
-    "cost7": 39,
-    "cost8": 39,
-    "mortystars": "VP",
     "taraplayed": "n"
   },
   {
@@ -1412,7 +1332,7 @@
     "cost4": 49.99,
     "cost5": 49.99,
     "cost6": 49.99,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "taraplayed": "n"
   },
   {
@@ -1434,7 +1354,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -1455,7 +1375,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "n"
   },
   {
@@ -1477,7 +1397,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "y",
     "tarareview": "(Played at the San Diego location) Would not recommend; puzzles were very simple to the point where we were able to solve some without actually using the clues. Some puzzles didn't correlate well and the solutions didn't end up making much sense. Game was very linear, we were only solving one puzzle at a time."
   },
@@ -1499,7 +1419,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "M",
+    "mortystars": "Mixed",
     "taraplayed": "n"
   },
   {
@@ -1520,7 +1440,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "taraplayed": "n"
   },
   {
@@ -1541,7 +1461,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": ".",
     "taraplayed": "n"
   },
@@ -1563,7 +1483,7 @@
     "cost6": 49.99,
     "cost7": 49.99,
     "cost8": 49.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "taraplayed": "n"
   },
   {
@@ -1584,7 +1504,7 @@
     "cost6": 29.99,
     "cost7": 27.99,
     "cost8": 26.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "medium",
     "taraplayed": "n"
   },
@@ -1606,7 +1526,7 @@
     "cost6": 29.99,
     "cost7": 27.99,
     "cost8": 26.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "easy",
     "taraplayed": "n"
   },
@@ -1628,7 +1548,7 @@
     "cost6": 32.99,
     "cost7": 30.99,
     "cost8": 29.99,
-    "mortystars": "VP",
+    "mortystars": "Very Positive",
     "bizdiff": "hard",
     "taraplayed": "n"
   },
@@ -1650,7 +1570,7 @@
     "cost6": 29.99,
     "cost7": 27.99,
     "cost8": 26.99,
-    "mortystars": "MP",
+    "mortystars": "Mostly Positive",
     "bizdiff": "expert",
     "taraplayed": "n"
   }
