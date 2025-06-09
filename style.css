@@ -18,11 +18,19 @@ body {
     }
 
     /* star marker */
-    .material-icons {
+    .material-icons.noHover {
         color: #eb34cc;
         font-size: 24px;
         -webkit-text-stroke: 2px;
         -webkit-text-stroke-color: #8f0377;
+    }
+
+    /* swap outline and fill color on hover */
+    .material-icons.hover {
+        color: #8f0377;
+        font-size: 24px;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color: #eb34cc;
     }
 
     /* popup stuff */
@@ -77,12 +85,12 @@ body {
 
     .popupImage {
         width: 100%;
-        max-height: 100px;
+        max-height: 150px;
         object-fit: scale-down;
     }
 
     .popup-label-black {
-        font-family: "Space Mono", monospace;
+        font-family: monospace, sans-serif;
         font-weight: 700;
         font-size: 14px;
         position: relative;
@@ -92,7 +100,7 @@ body {
     }
 
     .popup-label-white {
-        font-family: "Space Mono", monospace;
+        font-family: monospace, sans-serif;
         font-weight: 700;
         font-size: 14px;
         position: relative;
@@ -113,23 +121,27 @@ body {
         position: absolute;
         display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .flex-center.left {
-        left: 0px
+        left: 0px;
+        align-items: center;
     }
 
+    /* don't want align-items on flex-center.right because we want to adjust with margin to 
+    leave room for a button below the panel */
     .flex-center.right {
-        right: 0px
+        right: 0px;
+        margin-top: 2vh; 
     }
-
+    
     .flex-center.top {
         position: absolute;
         margin-top: 0;
         width: 30%;
         height: auto;
-        left: 25%
+        left: 25%;
+        align-items: center;
     }
 
     .flex-center.bottom {
@@ -139,17 +151,45 @@ body {
         height: 50%;
         left: 25%;
         align-items: flex-start;
+        align-items: center;
     }
 
     .sidebar-content {
         position: absolute;
         width: 95%;
         height: 95%;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: monospace, "Hepta Slab", sans-serif;
         font-size: 32px;
         color: gray;
         align-items: flex-start;
         justify-content: flex-start;
+    }
+
+    .sidebar-content.zoom {
+        height: 85%
+    }
+
+    #unzoomButton { 
+        height: 7vh;
+        width: 19vw;
+        margin-bottom: 10px;
+        align-items: center;
+        justify-content: center;
+        display: none;
+        transform: translate(80.5vw, 90vh);
+        position: absolute;
+        z-index: 1;
+        background-color:#8f0377;
+        cursor: pointer;
+    }
+
+    #unzoomButton p {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        color:white;
+        font-family: "Hepta Slab", monospace, sans-serif;
+        font-size: 2.3em;
     }
 
     .title-content {
@@ -160,7 +200,12 @@ body {
         height: 100%;
         font-size: 30px;
         color: #8f0377;
-        top: -10px;
+    }
+
+    .title-content h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+        margin-top: 10px;
     }
 
     .subtitle {
@@ -168,7 +213,7 @@ body {
         font-size: 15px;
         position: absolute;
         color: #555;
-        margin-top: 60px;
+        margin-top: 6%;
         font-weight: normal;
         text-align: center;
         width: 100%;
@@ -196,6 +241,10 @@ body {
         height: 7%;
         width: 15%;
         color: black;
+    }
+
+    .sidebar-toggle.right.zoom {
+        height: 8%;
     }
 
     .sidebar-toggle.top {
@@ -295,7 +344,6 @@ body {
         margin: 24px 16px 16px 16px;
         font-size: 16px;
         color: #222;
-        overflow-y: scroll;
         max-height: 100%;
         font-family: "Hepta Slab", sans-serif;
     }
@@ -305,7 +353,7 @@ body {
         color: #8f0377;
         font-size: 29px;
         text-align: left;
-        font-family: "space Mono", monospace;
+        font-family: monospace, sans-serif;
     }
 
     #info-content h4 {
@@ -313,7 +361,8 @@ body {
         color: #8f0377;
         font-size: 20px;
         text-align: left;
-        font-family: "Space Mono", monospace;
+        font-family: monospace, sans-serif;
+        margin-bottom: 0;
     }
 
     #info-content ul {
@@ -322,51 +371,342 @@ body {
     }
 
     #info-panel-scroll {
-        overflow-y: clip;
         height: 100%;
         width: 100%;
+        overflow-y: scroll;
+    }
+
+    /* keep scroll bar visible */
+    ::-webkit-scrollbar { 
+        -webkit-appearance: none;
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 7px;
+        background-color: rgba(143, 3, 119, 0.5);
     }
 
     /* right sidebar content for businesses */
-
-    #right-sidebar-content.business { /* need to add class toggle in js */
+    #right-sidebar-content.business { 
         font-size: 16px;
         color: #555;
-        overflow-y: scroll;
-        font-family: "Hepta Slab", sans-serif;
-        margin: 20px;
-        width: 90%;
-        height: 90%;
+        overflow-y: auto;
+        font-family: monospace, sans-serif;
+        margin-left: 1vw;
+        margin-right: 0.2vw;
+        margin-top: 1vh;
+        width: 100%;
+        height: calc(100% - 2vh); /* prevent overflow */
+        margin-bottom: 1vh;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
     }
 
+    /* Remove extra margin from the last child in the sidebar */
+    #right-sidebar-content.business > *:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    /* business name */
     #right-sidebar-content.business h2 {
         margin-top: 0;
         color: #8f0377;
         font-size: 2vw;
         text-align: left;
-        font-family: "Space Mono", monospace;
         line-height: 4vh;
+        margin-bottom: 0;
+        font-weight:bold;
+        font-family: "Notable", monospace;
     }
 
+    /* address */
+    #right-sidebar-content.business h3 {
+        font-size: 1.2vw;
+        margin-bottom: 0;
+        font-weight:bold;
+    }
+
+    /* phone number */
+    #right-sidebar-content.business h4{
+        font-size: 1.1vw;
+        margin-bottom: 0;
+    }
+
+    /* email */
     #right-sidebar-content.business h5 {
+        font-size: 1vw;
+        margin-bottom: 0;
+        color:#8f0377;
+    }
+
+    /* notes */
+    #right-sidebar-content.business h6 {
         font-size: 0.8vw;
     }
 
-    #right-sidebar-content.business p {
-        font-size: 0.9vw;
+    /* placeholder if nothing is clicked */
+    #right-sidebar-content.business h1 {
+        font-size: 1.5em;
+        color: #555;
+        font-family: "Hepta Slab", sans-serif;
+        margin: 10px;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        text-align: center;
+        line-height: 100%;
     }
-
+    
     /* links inherit color from parent class */
     a, a:visited { 
-        color: inherit;
+        color: inherit !important;
         text-decoration: none;
     }
 
     /* hovered/active link has pink color */
     a:hover, a:active{ 
-        color: #eb34cc;
+        color: #eb34cc !important;
         text-decoration: none;
     }
 
+    #mortyLink {
+        color: #8f0377!important;
+    }
+
+    hr {
+        all: unset;
+        display: block;
+        width: 100%;
+        border: none;
+        border-top: 2px solid black;
+        height: 0;
+        margin: 1em 0;
+        background: transparent;
+        color: transparent;
+        box-shadow: none;
+    }
+
+    #right-sidebar-content.business hr {
+        all: unset;
+        display: none;
+        width: 100%;
+        border: none !important;
+        border-top: 2px solid #8f0377 !important;
+        height: 0 !important;
+        margin: 1em 0 !important;
+        background: transparent !important;
+        color: transparent !important;
+        box-shadow: none !important;
+        z-index: 9997;
+    }
+
+    #room-list {
+        text-align: left;
+    }
+    
+    #room-list img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: scale-down;
+        margin-top: 10px !important;
+        cursor: pointer;
+    }
+
+    /* room name */
+    #room-list h1 {
+        font-family: monospace, sans-serif;
+        font-weight: bold;
+        color:#8f0377 !important;
+        text-align: center !important;
+        margin-top: 20px !important;
+        line-height: 1.2em !important;
+        cursor: pointer;
+    }
+
+    /* rating */
+    #room-list h2 {
+        font-family: "Hepta Slab", sans-serif !important;
+        font-size: 0.9em !important;
+        font-weight: bold;
+        color:#555 !important;
+    }
+
+    #room-list p {
+        font-family: "Hepta Slab", sans-serif;
+        font-size: 0.7em;
+        margin-bottom: 10px !important;
+    }
+
+    /* business label */
+    #room-list h3 {
+        font-family: monospace, sans-serif;
+        font-size: 0.8em !important;
+        color: #999;
+        text-align:center !important;
+        margin-top:-10px;
+    }
+
+    /* tara has played note */
+    #room-list h4 {
+        font-family: "Hepta Slab", sans-serif;
+        font-size: 0.7em !important;
+        color:#eb34cc !important;
+    }
+
+    /* aligning text */
+    #room-list, #room-list * {
+        text-align: left !important;
+        justify-content: flex-start !important;
+        align-self: flex-start !important;
+    }
+
+    /* room name */
+    #room-details h1 {
+        font-family: monospace, sans-serif;
+        font-weight: bold;
+        color:#8f0377 !important;
+        text-align: center !important;
+        margin-bottom: 5px !important;
+        margin-top: 20px !important;
+        line-height: 1.2em !important;
+        height: unset !important;;
+    }
+
+    #room-details img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: scale-down;
+        margin-bottom: 5px !important;
+    }
+
+    /* most of the info in this section */
+    #room-details h2 {
+        font-family: "Hepta Slab", sans-serif !important;
+        font-size: 0.7em !important;
+        font-weight: normal !important;
+        color:#555 !important;
+
+    }
+
+    /* tara's review */
+    #room-details h3 {
+        font-family: "Hepta Slab", sans-serif;
+        font-size: 0.7em !important;
+        font-weight: normal !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* description */
+    #room-details p {
+        margin-top: 10px !important; /* not working */
+        font-family: "Hepta Slab", sans-serif;
+        font-size: 0.7em !important;
+        margin-bottom: 10px !important;
+        font-weight: normal;
+    }
+    
+    #book-link {
+        color:#8f0377 !important;
+        font-weight: bold;
+    }
+
+    #left-sidebar-content {
+        margin: 10px;
+        overflow-y: auto;
+        max-height: calc(100vh - 20px);
+    }
+
+    #left-sidebar-content h1 {
+        color:#8f0377;
+        font-family: "Notable", sans-serif;
+        margin-bottom:0.5em;
+        font-weight:bold;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #player-slider,
+    #difficulty-slider {
+        margin-bottom: 1em;
+        color: #8f0377;
+        font-family: monospace, sans-serif;
+        cursor: pointer;
+    }
+
+    /* checkbox label styling for left sidebar filter checkboxes */
+    #checkboxes label {
+        font-family: monospace, sans-serif;
+        font-size: 0.6em;
+        color: #8f0377;
+        cursor: pointer;
+        display: inline;
+        white-space: normal;
+        word-break: break-word;
+        max-width: 90%;
+        margin-bottom: 5px;
+    }
+    #checkboxes input[type="checkbox"] {
+        accent-color: #8f0377;
+        width: 1.3em;
+        transform: scale(1.3);
+        vertical-align: middle;
+        cursor:pointer;
+        margin-left: 10px;
+    }
+
+    #left-sidebar-content p {
+        font-size: 0.4em;
+    }
+
+    #left-sidebar-content h2 {
+        font-family: "Hepta Slab", sans-serif;
+        color:#eb34cc;
+        text-align: center;
+        font-weight: bold;
+        font-size: 0.6em;
+        display: none; /* warning message hidden by default */
+    }
+
+    .slider-steps {
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.4em;
+        color: #8f0377;
+        margin-top: 0.2em;
+        padding: 0 0.2em;
+        width: 100%;
+    }
+    .slider-steps span {
+        min-width: 1.5em;
+        text-align: center;
+    }
+
+    #clear-button {
+        margin: 25px auto 0 auto;
+        padding: 10px 18px;
+        background: #8f0377;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(143,3,119,0.08);
+        font-family: "Hepta Slab", monospace, sans-serif;
+        font-size: 0.7em;
+        color: white;
+        text-align: center;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    #player-slider input[type="range"],
+    #difficulty-slider input[type="range"] {
+        cursor: pointer;
+    }
 
 

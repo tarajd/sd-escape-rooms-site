@@ -1,75 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>San Diego Escape Rooms</title>
-<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+    <head>
+    <link rel="icon" href="data:," />
+        <meta charset="utf-8">
+        <title>San Diego Escape Rooms</title>
 
-<!--Mapbox GL JS link-->
-<link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
-<link href="style.css" rel="stylesheet" />
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
 
-<!--FontAwesome link (for carets)-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--Mapbox GL JS link-->
+        <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
 
-<!--Google Fonts link-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!--css link for zoom out icon-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-<!--Title panel font-->
-<link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
-<!--Subtitle Font-->
-<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
-<!--popup label font-->
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!--FontAwesome link (for carets)-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
-<!--Star icon link-->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Google Fonts link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+        <!--Title panel font-->
+        <link href="https://fonts.googleapis.com/css2?family=Notable&display=swap" rel="stylesheet">
+        <!--Subtitle Font-->
+        <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+        <!--popup label font-->
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
-</head>
+        <!--Star icon link-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+
+    </head>
     <body>
         <div id="map">
             <!--Sidebars-->
-            <div id="left-sidebar" class="sidebar flex-center left collapsed">
-                <div class="sidebar-content rounded-rect flex-center"><!--might delete-->
+            <div id="left-sidebar" class="sidebar flex-center left collapsed" role="region" aria-label="Filters Sidebar">
+                <div class="sidebar-content rounded-rect flex-center">
                     <div id="left-sidebar-content">
-                        Placeholder
+                        <h1>FILTERS</h1><br>
+                        <div id="player-slider">
+                            <label for="playerSliderLabel"># Players</label>
+                            <input type="range" id="playerSliderLabel" min="1" max="14" aria-valuemin="1" aria-valuemax="14" aria-label="Number of Players Slider" tabindex="0">
+                            <div class="slider-steps">
+                                <span style="white-space: pre;">   2</span><span style="white-space: pre;">  4</span><span style="white-space: pre;">  6</span><span style="white-space: pre;">  8</span><span style="white-space: pre;">  10</span><span style="white-space: pre;"> 12</span><span style="white-space: pre;"> 14</span>
+                            </div>
+                        </div>
+                        <div id="difficulty-slider">
+                            <label for="difficultySliderLabel">Difficulty*</label>
+                            <input type="range" id="difficultySliderLabel" min="1" max="4" aria-valuemin="1" aria-valuemax="4" aria-label="Difficulty Slider" tabindex="0">
+                            <div class="slider-steps">
+                                <span>easy</span><span style="white-space: pre;">  med</span><span style="white-space: pre;">   hard</span><span>expert</span>
+                            </div>
+                        </div>
+                        <div id="checkboxes">
+                            <input type="checkbox" id="kidCheckbox" tabindex="0">
+                            <label for="kidCheckbox">Kid Friendly**</label><br><br>
+                            <input type="checkbox" id="accessibleCheckbox" tabindex="0">
+                            <label for="accessibleCheckbox">Accessible**</label><br><br>
+                            <input type="checkbox" id="taraCheckbox" tabindex="0">
+                            <label for="taraCheckbox">Played by Tara</label>
+                        </div>
+                        <p><br>*Rooms that for which businesses did not specify a difficulty level are given a default difficulty level of medium.<br>**Options not shown may or may not be accessible or kid friendly; contact business for more information.<br></p>
+                        <h2>No rooms meet this criteria. Please adjust your selections.</h2>
+                        <button id="clear-button" type="button" tabindex="0" aria-label="Clear selections">
+                            CLEAR SELECTIONS
+                        </button>
+                        <br><br> <!--prevent overflow-->
                     </div>
+
                     <div class="sidebar-toggle rounded-rect left">
-                        <i id="leftbar-caret" style="font-size:36px" class="fa">&#xf0da;</i>
+                        <i id="leftbar-caret" style="font-size:36px" class="fa" role="button" tabindex="0" aria-label="Toggle left sidebar" aria-pressed="false"></i>
                     </div>
                 </div>
             </div>
-            <div id="right-sidebar" class="sidebar flex-center right collapsed">
-                <div class="sidebar-content rounded-rect flex-center">
-                    <div id="right-sidebar-content" class="business">
-                        <h2 id="businessName" href="url">Business Name</h2>
-                        <h4 id="address">Address</h4>
-                        <h4 id="phoneNumber">Phone Number</h4>
-                        <h5 id="email">Email</h5>
-                        <p id="notes">Notes</p>
+            <div id="right-sidebar" class="sidebar flex-center right collapsed" role="region" aria-label="Business Info Sidebar">
+                <div class="sidebar-content rounded-rect flex-center"> <!--change height of panel with adding zoom-->
+                    <div id="right-sidebar-content" class="business"> 
+                        <h1 id="placeholder">Click on a marker to see business info</h1>
                     </div>
-                    <div class="sidebar-toggle rounded-rect right">
-                        <i id="rightbar-caret" style="font-size:36px" class="fa">&#xf0d9;</i>
+                    <div class="sidebar-toggle rounded-rect right"> <!--change height of panel button with adding zoom-->
+                        <i id="rightbar-caret" style="font-size:36px" class="fa" role="button" tabindex="0" aria-label="Toggle right sidebar" aria-pressed="false"></i>
                     </div>
                 </div>
+            </div>
+            <div id="unzoomButton" class="rounded-rect" role="button" tabindex="0" aria-label="Unzoom map">
+                <p><i class="glyphicon" aria-hidden="true">&#xe016;</i>UNZOOM</p>
             </div>
             <!--Title Panel-->
-            <div id="top-title" class="sidebar rounded-rect flex-center top collapsed">
+            <div id="top-title" class="sidebar rounded-rect flex-center top collapsed" role="region" aria-label="Title Panel">
                 <div class="title-content flex-center">
-                    San Diego Escape Rooms
+                    <h1>San Diego Escape Rooms</h1>
                     <div class="subtitle">tool made by Tara Disser</div>
                     <div class="sidebar-toggle rounded-rect top">
-                        <i id="top-caret" style="font-size:36px" class="fa">&#xf0d7;</i><!-- Down arrow -->
+                        <i id="top-caret" style="font-size:36px" class="fa" role="button" tabindex="0" aria-label="Toggle title panel" aria-pressed="false"></i><!-- Down arrow -->
                     </div>
                 </div>
             </div>
             <!--Gray overlap for info panel-->
-            <div id="overlay"></div>
+            <div id="overlay" aria-hidden="true"></div>
             <!--Info Panel-->
-            <div id="info-panel" class="sidebar rounded-rect flex-center bottom collapsed">
+            <div id="info-panel" class="sidebar rounded-rect flex-center bottom collapsed" role="region" aria-label="Info Panel">
                 <div id="info-panel-scroll">
                     <div id="info-content">
                         <h2>ABOUT THIS MAP</h2>
@@ -85,14 +119,33 @@
                                 <li>Look through each businesses' rooms and find one that fits your needs!</li>
                             </ul>
                             <br>
+                            <h4>DATA SOURCING</h4>
+                            <p>
+                                Data for rooms including pictures and logos was collected from each businesses' website, 
+                                and rating of rooms was collected from <a id="mortyLink" href="https://morty.app">Morty</a>, all data 
+                                last updated roughly May 31st, 2025. Data on this map <i>will not</i> update as businesses update
+                                their websites.
+                            </p>
+                            <br>
                             <h4>AUTHOR'S NOTE</h4>
                             <p>
-                                bla bla
+                                I grew up in San Diego and played my first escape room around the age of 11. It's one of my 
+                                family's favorite activies to do together, and we often play them for birthdays and other celebrations.
+                                At a certain point, I became the designated searcher for escape rooms&mdash;I have spent hours looking
+                                through Google reviews, Morty reviews, and business websites to find one that was the perfect fit for us. 
+                                A few years ago, when I was first getting into coding, I had the idea to make a database of rooms in San Diego 
+                                and create some interface that would allow me to filter them by certain attributes such as group size, level 
+                                of difficulty, etc. As a project for GEOG 492, a web mapping class at the University of Oregon, I decided to 
+                                make it happen. And here it is.<br><br>
+                                Use the left panel to filter room's that I've played, and scroll to the bottom of the right panel to see how
+                                I rate them!
                             </p>
+                            <br> <!--hard code margin so content does not get cut off-->
                     </div>
                 </div>
                 <div class="sidebar-toggle rounded-rect bottom">
-                    <i id="info-button" style="font-size:36px" class="fa">&#xf05a;</i>
+                    <i id="info-button" style="font-size:36px" class="fa" role="button" tabindex="0" aria-label="Show info panel" aria-pressed="false">&#xf05a;</i>
+                    <!-- Add JS to handle Enter/Space key for accessibility -->
                 </div>
             </div>
         </div>  
